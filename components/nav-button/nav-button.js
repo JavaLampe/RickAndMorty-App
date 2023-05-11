@@ -8,4 +8,4 @@ export function navButton() {
     buttonPrev.setAttribute("onclick", "prevPage()");
     buttonNext.setAttribute("onclick", "nextPage()");
     return [buttonPrev, buttonNext]
-}
+};
