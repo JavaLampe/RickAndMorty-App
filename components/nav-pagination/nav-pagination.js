@@ -10,5 +10,5 @@ export function createPagination() {
     span.setAttribute("data-js", "pagination");
     nav.append(button[0], span, button[1]);
     return nav
-}
+};
 
