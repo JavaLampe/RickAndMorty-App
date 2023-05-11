@@ -23,8 +23,8 @@ async function fetchCharacters(page) {
     if (!response) {
       console.log("error: ", response.status);
     }
-    const maxPages = data.info.pages;
-    pagination.textContent = `${page} / ${maxPages}`
+    const maxPage = data.info.pages;
+    pagination.textContent = `${page} / ${maxPage}`
     const characters = data.results;
     characters.forEach(function(character) {
       const card = createCharacterCard(character);
