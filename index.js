@@ -50,6 +50,7 @@ nextButton.addEventListener('click', () => {
 searchBar.addEventListener('submit', (event) => {
   event.preventDefault();
   searchQuery = event.target.elements.input.value;
+  page = 1;
   fetchCharacters(searchQuery, page);
   event.target.reset();
   event.target.elements.input.focus();
