@@ -1,4 +1,4 @@
-export function createCharacterCard(character) {
+export function Card(character) {
     const card = document.createElement("li");
     card.innerHTML = `
     <li class="card">
