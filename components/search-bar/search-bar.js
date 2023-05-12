@@ -1,6 +1,5 @@
 export function SearchBar() {
   const searchBarContainer = document.createElement("div");
-  console.log(searchBarContainer);
   searchBarContainer.setAttribute("class", "search-bar-container");
   searchBarContainer.setAttribute("data-js", "search-bar-container");
 
@@ -26,7 +25,6 @@ export function SearchBar() {
   image.alt = "";
 
   btn.append(image);
-
   form.append(input, btn);
   searchBarContainer.append(form);
 
