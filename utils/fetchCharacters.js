@@ -1,4 +1,5 @@
 import { Card } from "../components/card/card.js";
+import { noCharacter } from "./noCharacter.js";
 
 export async function fetchCharacters(cardElement, searchQuery, page) {
     try {
@@ -9,6 +10,7 @@ export async function fetchCharacters(cardElement, searchQuery, page) {
             console.log("error: ", response.status);
         };
         const characters = data.results;
+        if(characters === undefined) {noCharacter(cardElement, searchQuery); return};
         cardElement.innerHTML = "";
         characters.forEach((character) => {
             const card = Card(character);
